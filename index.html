@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonio Lang — Full-Stack & ML Engineer</title>
+    <meta
+      name="description"
+      content="Full-stack and machine learning engineer. Projects, experience, and contact."
+    />
+
+    <!-- Apply saved/system theme before paint to avoid a flash -->
+    <script>
+      (function () {
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (!t)
+          t = matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__logo mono"
+          >al<span class="accent">.</span></a
+        >
+        <nav aria-label="Primary">
+          <ul class="nav__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <span class="nav__indicator" aria-hidden="true"></span>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4.5" />
+            <g stroke-linecap="round">
+              <line x1="12" y1="1.5" x2="12" y2="4" />
+              <line x1="12" y1="20" x2="12" y2="22.5" />
+              <line x1="1.5" y1="12" x2="4" y2="12" />
+              <line x1="20" y1="12" x2="22.5" y2="12" />
+              <line x1="4.6" y1="4.6" x2="6.3" y2="6.3" />
+              <line x1="17.7" y1="17.7" x2="19.4" y2="19.4" />
+              <line x1="4.6" y1="19.4" x2="6.3" y2="17.7" />
+              <line x1="17.7" y1="6.3" x2="19.4" y2="4.6" />
+            </g>
+          </svg>
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            aria-hidden="true"
+          >
+            <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero container" id="top">
+        <p class="status load" style="--d: 0">
+          <span class="status__dot"></span>Open to full-time SWE &amp; ML roles
+        </p>
+        <h1 class="hero__title load" style="--d: 1">Hi, I'm Antonio.</h1>
+        <p class="hero__lede load" style="--d: 2">
+          I'm a <strong>full-stack &amp; machine learning engineer</strong>. I
+          build web products end to end, from training the model to putting it
+          in front of users.
+        </p>
+        <div class="hero__cta load" style="--d: 3">
+          <a href="#projects" class="btn btn--primary"
+            >View projects <span class="arrow">→</span></a
+          >
+          <a href="resume.pdf" class="btn btn--ghost">Résumé</a>
+        </div>
+        <ul class="hero__social load" style="--d: 4">
+          <li>
+            <a
+              href="https://github.com/antoniolang1107"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/antonio-lang/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="mailto:antoniolang8@gmail.com">Email</a></li>
+        </ul>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section container" id="about">
+        <h2 class="section__title reveal">
+          <span class="mono accent">01</span> About
+        </h2>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              I'm a software engineer in Reno with an
+              <em>M.S. in Computer Science</em> (2025) and a
+              <em>B.S. in Computer Science &amp; Engineering</em> (2023) from
+              the University of Nevada, Reno.
+            </p>
+            <p>
+              For two years I was a full-stack and ML engineer at the
+              <em>Desert Research Institute</em>, building data platforms,
+              training models and prototyping a RAG system for environmental
+              research. Before that, I automated inventory work at
+              <em>Tesla</em> (70% faster) and did undergraduate research in
+              <em>federated learning</em>, which led to a
+              <a href="#experience" class="link">co-authored preprint</a>, and
+              in <em>blockchain interoperability</em>. Now I'm looking for a
+              team where I can own features end to end.
+            </p>
+          </div>
+          <div class="skills reveal">
+            <div class="skills__group">
+              <h3>Languages</h3>
+              <ul class="tags">
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>C</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>ML</h3>
+              <ul class="tags">
+                <li>scikit-learn</li>
+                <li>TensorFlow</li>
+                <li>pandas</li>
+                <li>OpenCV</li>
+                <li>DeepFace</li>
+                <li>gensim</li>
+                <li>Federated learning</li>
+                <li>Flower</li>
+                <li>FedML</li>
+                <li>OpenFL</li>
+                <li>RAG</li>
+                <li>LangChain</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Web</h3>
+              <ul class="tags">
+                <li>ASP.NET</li>
+                <li>React</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Vue</li>
+                <li>React Native</li>
+                <li>Tailwind</li>
+                <li>SQLAlchemy</li>
+                <li>Potree.js</li>
+                <li>Chart.js</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <h3>Infra &amp; tools</h3>
+              <ul class="tags">
+                <li>Docker</li>
+                <li>PostgreSQL</li>
+                <li>ArcGIS</li>
+                <li>Apache Solr</li>
+                <li>Redis</li>
+                <li>Selenium</li>
+                <li>pytest</li>
+                <li>Cypress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section container" id="projects">
+        <h2 class="section__title reveal">
+          <span class="mono accent">02</span> Selected projects
+        </h2>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="project__head">
+              <h3>PSPNet</h3>
+              <span class="project__kind mono"
+                >Full-stack · ML platform · Team of 4</span
+              >
+            </div>
+            <p class="project__summary">
+              A web platform for a wildfire research grant. The public and
+              research teams upload photos of plants and soil from before and
+              after fires, and the images are classified by computer vision
+              models.
+            </p>
+            <dl class="project__detail">
+              <div>
+                <dt>Problem</dt>
+                <dd>
+                  Researchers needed one place to collect field images from
+                  volunteers and lab members, organize them into datasets, run
+                  classification models on them, and have experts check the
+                  labels.
+                </dd>
+              </div>
+              <div>
+                <dt>My role</dt>
+                <dd>
+                  Built much of the Flask API and Vue frontend: browsing and
+                  downloading datasets, shared projects with email invites, a
+                  label-verification workflow that only principal investigators
+                  can use (JWT-protected), and each user's upload history.
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>
+                  126 commits and about 3.9k lines over 5 months, the
+                  second-largest contribution on the team. The platform runs in
+                  Docker, and a Redis/RQ worker queue runs a YOLOv5 model
+                  exported to ONNX.
+                </dd>
+              </div>
+            </dl>
+            <ul class="tags tags--sm">
+              <li>ASP.NET</li>
+              <li>Flask</li>
+              <li>Vue</li>
+              <li>SQLAlchemy</li>
+              <li>Redis/RQ</li>
+              <li>Docker</li>
+              <li>YOLOv5</li>
+              <li>Cypress</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/cantiado/pspnet"
+                class="link"
+                target="_blank"
+                rel="noopener"
+                >Code <span class="arrow">↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3>Ping Pong Palooza</h3>
+              <span class="project__kind mono">Full-stack · Mobile</span>
+            </div>
+            <p class="project__summary">
+              A mobile app for recording local ping pong matches and ranking
+              players on a live Elo leaderboard.
+            </p>
+            <dl class="project__detail">
+              <div>
+                <dt>Problem</dt>
+                <dd>
+                  Friendly rivalries had no record of who was actually winning.
+                </dd>
+              </div>
+              <div>
+                <dt>Approach</dt>
+                <dd>
+                  An Expo / React Native app written in TypeScript, talking to a
+                  Flask API backed by PostgreSQL. Each recorded match updates
+                  both players' Elo ratings on the server, and rankings are
+                  computed in SQL with window functions.
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>
+                  Working end to end: register players, record matches, and
+                  watch the leaderboard update. Includes typed request
+                  validation with Pydantic and structured logging.
+                </dd>
+              </div>
+            </dl>
+            <ul class="tags tags--sm">
+              <li>TypeScript</li>
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Flask</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/antoniolang1107/PingPongPalooza"
+                class="link"
+                target="_blank"
+                rel="noopener"
+                >Code <span class="arrow">↗</span></a
+              >
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__head">
+              <h3>Auction Scraper</h3>
+              <span class="project__kind mono">Automation</span>
+            </div>
+            <p class="project__summary">
+              A scheduled scraper that watches a local online auction site and
+              emails me listings that match what I'm looking for.
+            </p>
+            <dl class="project__detail">
+              <div>
+                <dt>Problem</dt>
+                <dd>
+                  Checking hundreds of auction lots by hand every week took too
+                  much time.
+                </dd>
+              </div>
+              <div>
+                <dt>Approach</dt>
+                <dd>
+                  Selenium drives a headless Firefox through a JavaScript-heavy
+                  site. Searches are defined in JSON config files (keywords,
+                  categories, recipient), and a conductor script runs every
+                  search and sends an HTML digest through the Gmail API.
+                </dd>
+              </div>
+              <div>
+                <dt>Result</dt>
+                <dd>
+                  I use it regularly. Adding a new search takes a few lines of
+                  config, not code.
+                </dd>
+              </div>
+            </dl>
+            <ul class="tags tags--sm">
+              <li>Python</li>
+              <li>Selenium</li>
+              <li>Gmail API</li>
+              <li>OAuth</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/antoniolang1107/RPA-Scraper"
+                class="link"
+                target="_blank"
+                rel="noopener"
+                >Code <span class="arrow">↗</span></a
+              >
+            </div>
+          </article>
+        </div>
+
+        <h3 class="more-title reveal">More projects</h3>
+        <ul class="minis">
+          <li class="reveal">
+            <a
+              href="https://github.com/antoniolang1107/Facial_Recognition"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="minis__name">Facial Recognition</span>
+              <span class="minis__desc"
+                >Matches faces in a live video stream against reference photos
+                using DeepFace and OpenCV, with recognition on a background
+                thread. Runs in Docker.</span
+              >
+              <span class="minis__stack mono">DeepFace · OpenCV · Docker</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://github.com/antoniolang1107/Doc2Vec"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="minis__name">Tweet Sentiment with Doc2Vec</span>
+              <span class="minis__desc"
+                >Trains Doc2Vec embeddings on labeled Twitter data, then
+                compares logistic regression, decision tree and SVM classifiers
+                on accuracy, balanced accuracy and F1.</span
+              >
+              <span class="minis__stack mono"
+                >gensim · NLTK · scikit-learn</span
+              >
+            </a>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://github.com/antoniolang1107/ML-Algorithms"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="minis__name">ML from scratch</span>
+              <span class="minis__desc"
+                >Perceptron, KNN, K-Means, AdaBoost, decision trees and PCA,
+                implemented directly from the math instead of calling library
+                models.</span
+              >
+              <span class="minis__stack mono">Python · NumPy</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a
+              href="https://github.com/antoniolang1107/SQL-Terminal"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="minis__name">Mini DBMS</span>
+              <span class="minis__desc"
+                >A SQL database system built from scratch: tables, queries,
+                inner and outer joins, and transactions with table locking,
+                without using pandas' built-in SQL helpers.</span
+              >
+              <span class="minis__stack mono">Python</span>
+            </a>
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/antoniolang1107?tab=repositories"
+          class="link more reveal"
+          target="_blank"
+          rel="noopener"
+        >
+          Everything on GitHub <span class="arrow">→</span>
+        </a>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section container" id="experience">
+        <h2 class="section__title reveal">
+          <span class="mono accent">03</span> Experience
+        </h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Apr 2024 — Jul 2026</span>
+            <div>
+              <h3>
+                Staff Research Scientist ·
+                <span class="muted">Desert Research Institute</span>
+              </h3>
+              <p>
+                Full-stack and ML engineering for environmental research teams.
+              </p>
+              <ul class="timeline__bullets">
+                <li>
+                  Owned lab data management software (Python, <em>React</em>)
+                  from start to finish: identified stakeholders, designed the
+                  UI/UX, ran project meetings, designed the database and built
+                  the application. It unified separate data stores and was
+                  designed to transition <em>~5 researchers</em> off paper task
+                  tracking records.
+                </li>
+                <li>
+                  Trained and compared dust visibility models, including random
+                  forest, SVM and logistic regression, reaching
+                  <em>over 92% accuracy</em>.
+                </li>
+                <li>
+                  Prototyped a <em>RAG</em> (retrieval-augmented generation)
+                  system with <em>LangChain</em> to make DRI's internal library
+                  of scientific reports easier to search.
+                </li>
+                <li>
+                  Built the GUI and API integration for a thermal-imagery
+                  <em>object detection</em> tool.
+                </li>
+              </ul>
+              <div class="subcard">
+                <div class="subcard__head">
+                  <h4>Scientific Data Portal</h4>
+                  <span class="subcard__meta mono">C# · ASP.NET · ArcGIS</span>
+                </div>
+                <dl class="project__detail">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>
+                      Two decades of scientific reports, analyses and data had no convenient, access-controlled place where clients could reach them.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>
+                      Built many features of a full-stack web platform with user permissions (<em>C#, ASP.NET</em>) that brings together report search (<em>Apache Solr</em>), geospatial data (<em>ArcGIS</em>), high-detail 3D terrain models (<em>Potree.js</em>) and climate comparison charts (<em>Chart.js</em>).
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>
+                      Clients approve their own users and grant access, and those users can compare climate across related regions, read research reports and explore 3D terrain in one place. Automated data retrieval and permission checks save time for clients and staff.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="subcard">
+                <div class="subcard__head">
+                  <h4>Soil Data Platform</h4>
+                  <span class="subcard__meta mono">Python · Django</span>
+                </div>
+                <dl class="project__detail">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>
+                      Over 10 years of geolocated soil property data was spread across hundreds of files with inconsistent schemas, and lab results were stored separately from field-collected data.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>
+                      Built a Django application that parses <em>20+ file-naming conventions</em> to extract metadata, links lab results to the matching field data, and automates common data transformations.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>
+                      A decade of data can now be queried from one place. The app is designed to become the foundation for automated queries and <em>ML-based change-over-time analysis</em>.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Sep — Dec 2023</span>
+            <div>
+              <h3>
+                Production Engineering Intern · <span class="muted">Tesla</span>
+              </h3>
+              <ul class="timeline__bullets">
+                <li>
+                  Built software on my own that automated part of an inventory
+                  process, cutting the time it took by <em>70%</em> and reducing
+                  errors.
+                </li>
+                <li>
+                  Developed Python pipelines for spare-part strategy that guided
+                  decisions about a <em>multi-million-dollar</em> warehouse
+                  inventory.
+                </li>
+                <li>
+                  Managed data in the CMMS (maintenance management system) and
+                  supported root-cause failure analysis.
+                </li>
+                <li>Key stakeholder in a Jira agile project.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Jun — Jul 2023</span>
+            <div>
+              <h3>
+                Federated Learning Researcher ·
+                <span class="muted">University of Nevada, Reno</span>
+              </h3>
+              <p>
+                Researched new federated learning approaches through UNR's
+                Research Experience for Undergraduates (REU) program. Ran the
+                training experiments for the paper's ablation study on the
+                university's compute cluster, comparing <em>Flower</em>,
+                <em>FedML</em> and <em>OpenFL</em> on CIFAR-10, Fashion-MNIST
+                and SVHN. Each combination was run 10 times and averaged. Our
+                approach, Model-Decoupled Federated Learning (MDFL), beat the
+                existing frameworks with
+                <em>up to 20 percentage points higher accuracy</em> and
+                <em>up to 90% less training time</em>.
+              </p>
+              <a
+                class="pub"
+                href="https://doi.org/10.13140/RG.2.2.26105.68963"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="pub__meta mono">Preprint · 2024</span>
+                <span class="pub__title"
+                  >Model-Decoupled Federated Learning: Exploring Database
+                  Adaptability and Neural Architectural Dynamics in Federated
+                  Learning <span class="arrow">↗</span></span
+                >
+                <span class="pub__authors"
+                  >M. J. Khan, <strong>A. L. Lang</strong>, O. T. Tawose, G.
+                  Cimino, S. Cirillo, L. Yang, D. Zhao</span
+                >
+              </a>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Jun — Aug 2022</span>
+            <div>
+              <h3>
+                Blockchain Researcher ·
+                <span class="muted">University of Nevada, Reno</span>
+              </h3>
+              <p>
+                Researched ways for different blockchains to interoperate
+                through UNR's REU program.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Jan 2021 — May 2023</span>
+            <div>
+              <h3>
+                Maker Wrangler ·
+                <span class="muted">University of Nevada, Reno</span>
+              </h3>
+              <p>
+                Taught patrons to use makerspace machinery (laser engravers, 3D
+                printers, vinyl cutters, CNC mill), troubleshot machine issues
+                as they came up, and gave design consultations to help people
+                develop their ideas.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Jun 2020 — Present</span>
+            <div>
+              <h3>Treasurer · <span class="muted">LinYL Foundation</span></h3>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="more-title reveal">Education</h3>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Jan 2024 — May 2025</span>
+            <div>
+              <h3>
+                M.S. Computer Science ·
+                <span class="muted">University of Nevada, Reno</span>
+              </h3>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono">Aug 2020 — Dec 2023</span>
+            <div>
+              <h3>
+                B.S. Computer Science &amp; Engineering ·
+                <span class="muted">University of Nevada, Reno</span>
+              </h3>
+              <p>
+                Merit-based NSF S-STEM Scholar. Enrolled in accelerated BS/MS
+                program.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section container contact" id="contact">
+        <h2 class="section__title reveal">
+          <span class="mono accent">04</span> Get in touch
+        </h2>
+        <p class="contact__lede reveal">
+          I'm looking for full-time software engineering and ML roles. If you
+          think I'd be a good fit, I'd love to hear from you.
+        </p>
+        <a
+          href="mailto:antoniolang8@gmail.com"
+          class="btn btn--primary btn--lg reveal"
+          >Say hello <span class="arrow">→</span></a
+        >
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p class="muted">© <span id="year"></span> Antonio Lang</p>
+      <a href="#top" class="link muted">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
